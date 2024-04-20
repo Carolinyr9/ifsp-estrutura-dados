@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1698886006 source:c:\users\aluno\documents\proj_act1\listasequencial.c
+	<stdio.h>
+	<stdlib.h>
+	"listaSequencial.h"
+
+1698885999 c:\users\aluno\documents\proj_act1\listasequencial.h
+

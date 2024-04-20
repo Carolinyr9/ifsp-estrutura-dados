@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1700950119 source:c:\users\carol\onedrive\documentos\estudos\faculdade\estrutura-de-dados\lista2\filad\filad.c
+	<stdio.h>
+	<stdlib.h>
+	"filaD.h"
+
+1700950635 c:\users\carol\onedrive\documentos\estudos\faculdade\estrutura-de-dados\lista2\filad\filad.h
+
+1700950635 source:c:\users\carol\onedrive\documentos\estudos\faculdade\estrutura-de-dados\lista2\filad\main.c
+	<stdio.h>
+	<stdlib.h>
+	"filaD.h"
+
+1701196693 source:c:\users\gabri\onedrive\Área de trabalho\www\ifsp-estrutura-dados-i\c12-dynamic_stack\proj_act1\filad.c
+	<stdio.h>
+	<stdlib.h>
+	"filaD.h"
+
+1701196694 c:\users\gabri\onedrive\Área de trabalho\www\ifsp-estrutura-dados-i\c12-dynamic_stack\proj_act1\filad.h
+

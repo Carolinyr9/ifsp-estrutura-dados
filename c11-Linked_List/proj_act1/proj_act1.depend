@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1699493284 source:c:\users\aluno\documents\c11-linked_list\proj_act1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"listaLigada.h"
+
+1699492580 c:\users\aluno\documents\c11-linked_list\proj_act1\listaligada.h
+
+1699492838 source:c:\users\aluno\documents\c11-linked_list\proj_act1\listaligada.c
+	<stdio.h>
+	<stdlib.h>
+	"listaLigada.h"
+
+1699997176 source:c:\users\gabri\onedrive\Área de trabalho\www\ifsp\ifsp-estrutura-dados-i\c11-linked_list\proj_act1\listaligada.c
+	<stdio.h>
+	<stdlib.h>
+	"listaLigada.h"
+
+1699997176 c:\users\gabri\onedrive\Área de trabalho\www\ifsp\ifsp-estrutura-dados-i\c11-linked_list\proj_act1\listaligada.h
+
+1699996734 source:c:\users\gabri\onedrive\Área de trabalho\www\ifsp\ifsp-estrutura-dados-i\c11-linked_list\proj_act1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"listaLigada.h"
+

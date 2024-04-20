@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1695342011 source:c:\users\gabri\onedrive\Área de trabalho\www\ifsp\ifsp-estrutura-dados-i\c9-abstract_data_type\proj_act3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"operacoes.h"
+
+1695342052 c:\users\gabri\onedrive\Área de trabalho\www\ifsp\ifsp-estrutura-dados-i\c9-abstract_data_type\proj_act3\operacoes.h
+
+1695343631 source:c:\users\gabri\onedrive\Área de trabalho\www\ifsp\ifsp-estrutura-dados-i\c9-abstract_data_type\proj_act3\operacoes.c
+	<stdio.h>
+	<stdlib.h>
+	"operacoes.h"
+

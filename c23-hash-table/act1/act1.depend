@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1710121079 source:c:\users\gabri\onedrive\Área de trabalho\www\ifsp-estrutura-dados-i\c23-hash-table\act1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"hashTable.h"
+
+1710120550 c:\users\gabri\onedrive\Área de trabalho\www\ifsp-estrutura-dados-i\c23-hash-table\act1\hashtable.h
+
+1710120561 source:c:\users\gabri\onedrive\Área de trabalho\www\ifsp-estrutura-dados-i\c23-hash-table\act1\hashtable.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"hashTable.h"
+

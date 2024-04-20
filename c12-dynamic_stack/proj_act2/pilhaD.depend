@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1700952661 source:c:\users\carol\onedrive\documentos\estudos\faculdade\estrutura-de-dados\lista2\pilhad\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pilhaD.h"
+
+1700952660 c:\users\carol\onedrive\documentos\estudos\faculdade\estrutura-de-dados\lista2\pilhad\pilhad.h
+
+1701197526 source:c:\users\gabri\onedrive\Área de trabalho\www\ifsp-estrutura-dados-i\c12-dynamic_stack\proj_act2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pilhaD.h"
+
+1701196700 c:\users\gabri\onedrive\Área de trabalho\www\ifsp-estrutura-dados-i\c12-dynamic_stack\proj_act2\pilhad.h
+
+1701196699 source:c:\users\gabri\onedrive\Área de trabalho\www\ifsp-estrutura-dados-i\c12-dynamic_stack\proj_act2\pilhad.c
+	<stdio.h>
+	<stdlib.h>
+	"pilhaD.h"
+

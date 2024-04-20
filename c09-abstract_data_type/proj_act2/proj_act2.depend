@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1695257981 source:c:\users\aluno\desktop\c9-abstract_data_type\proj_act2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"PTcart.h"
+
+1695257999 c:\users\aluno\desktop\c9-abstract_data_type\proj_act2\ptcart.h
+

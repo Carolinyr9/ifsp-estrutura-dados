@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1700916203 source:c:\users\carol\onedrive\documentos\estudos\faculdade\estrutura-de-dados\lista2\projetoacme\projetofinal.c
+	<stdio.h>
+	<stdlib.h>
+	"projetoFinal.h"
+
+1700916183 c:\users\carol\onedrive\documentos\estudos\faculdade\estrutura-de-dados\lista2\projetoacme\projetofinal.h
+
+1701380673 source:c:\users\carol\onedrive\documentos\estudos\faculdade\estrutura-de-dados\projetoacme\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"projetoFinal.h"
+
+1701380274 c:\users\carol\onedrive\documentos\estudos\faculdade\estrutura-de-dados\projetoacme\projetofinal.h
+
+1701380688 source:c:\users\carol\onedrive\documentos\estudos\faculdade\estrutura-de-dados\projetoacme\projetofinal.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"projetoFinal.h"
+
+1701215112 source:e:\estrut_dados\projetoacme\projetoacme\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"projetoFinal.h"
+
+1701215112 e:\estrut_dados\projetoacme\projetoacme\projetofinal.h
+

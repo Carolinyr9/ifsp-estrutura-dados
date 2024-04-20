@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1701303434 source:c:\users\aluno\documents\c13-doubly_linked_list\proj_act1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"listaDDupla.h"
+
+1701303371 c:\users\aluno\documents\c13-doubly_linked_list\proj_act1\listaddupla.h
+
+1701300532 source:c:\users\aluno\documents\c13-doubly_linked_list\proj_act1\listaddupla.c
+	<stdio.h>
+	<stdlib.h>
+	"listaDDupla.h"
+

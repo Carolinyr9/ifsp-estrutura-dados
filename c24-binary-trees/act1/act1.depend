@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1713319509 source:c:\users\gabri\onedrive\Área de trabalho\www\ifsp-estrutura-dados-i\c24-binary-trees\act1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreBinaria.h"
+
+1713320142 c:\users\gabri\onedrive\Área de trabalho\www\ifsp-estrutura-dados-i\c24-binary-trees\act1\arvorebinaria.h
+
+1713320012 source:c:\users\gabri\onedrive\Área de trabalho\www\ifsp-estrutura-dados-i\c24-binary-trees\act1\arvorebinaria.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreBinaria.h"
+
+1713309695 source:c:\users\aluno\downloads\ifsp-estrutura-dados-i-main\c24-binary-trees\act1\arvorebinaria.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreBinaria.h"
+
+1713309161 c:\users\aluno\downloads\ifsp-estrutura-dados-i-main\c24-binary-trees\act1\arvorebinaria.h
+
+1713310976 source:c:\users\aluno\downloads\ifsp-estrutura-dados-i-main\c24-binary-trees\act1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreBinaria.h"
+
