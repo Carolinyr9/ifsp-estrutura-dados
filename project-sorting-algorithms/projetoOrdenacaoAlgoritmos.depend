@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1717874944 source:c:\users\carol\onedrive\documentos\estudos\faculdade\estrutura-de-dados 2\projetoordenacaoalgoritmos\projeto.c
+	<assert.h>
+	<errno.h>
+	<stddef.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<stdio.h>
+	<sys/time.h>
+
+1717874944 source:c:\users\carol\onedrive\documentos\estudos\faculdade\estrutura-de-dados 2\projetoordenacaoalgoritmos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<sys/time.h>
+
