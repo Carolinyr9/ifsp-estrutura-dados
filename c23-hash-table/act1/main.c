@@ -9,7 +9,7 @@ int main()
     Hash *lista;
     ALUNO al;
 
-    lista = criaHash(1009); // normalmente usamos números primos
+    lista = criaHash(1024);
 
     do
     {

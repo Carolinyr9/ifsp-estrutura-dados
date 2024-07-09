@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1719961179 source:c:\users\aluno\desktop\teste\arvorellbr\arvorellbr.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreLLBR.h"
+
+1719961179 c:\users\aluno\desktop\teste\arvorellbr\arvorellbr.h
+
+1719960585 source:c:\users\aluno\desktop\teste\arvorellbr\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreLLBR.h"
+
+1719961179 source:c:\users\aluno\downloads\c26-red_black_tree\arvorellbr\arvorellbr.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreLLBR.h"
+
+1719961179 c:\users\aluno\downloads\c26-red_black_tree\arvorellbr\arvorellbr.h
+
+1719961495 source:c:\users\aluno\downloads\c26-red_black_tree\arvorellbr\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreLLBR.h"
+

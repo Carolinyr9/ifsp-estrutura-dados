@@ -3,18 +3,14 @@
 #include "arvoreBinaria.h"
 
 struct NO {
-    // cria estrutura de cada vértice da arvóre
-    // no estilo lista encadeada
     int info;
     struct NO *esq;
     struct NO *dir;
 };
 
 ArvBin *cria_arvBin(){
-    // ponteiro para arvore e alocação de mémoria
     ArvBin *raiz = (ArvBin*) malloc(sizeof(ArvBin));
     if(raiz != NULL){
-        // se dar certo, fica nula, já que ainda não temos elementos
         *raiz = NULL;
     }
     return raiz;
@@ -26,38 +22,37 @@ void liberar_arvBin(ArvBin *raiz)
     {
         return;
     }
-    libera_NO(*raiz); // percorre a árvore e libera cada nó
-    free(raiz); // libera a raiz
+    libera_NO(*raiz);
+    free(raiz);
 }
 
-void libera_NO(struct NO *no) // função recursiva
+void libera_NO(struct NO *no)
 {
-    if(no == NULL) // se não tiver filhos, retorna para o chamada anterior
+    if(no == NULL)
     {
         return;
     }
-    libera_NO(no->esq); // vai até o nó folha da esquerda
-    libera_NO(no->dir); // vai até o nó folha da direita
+    libera_NO(no->esq);
+    libera_NO(no->dir);
     free(no);
     no = NULL;
 }
 
 int vazia_arvBin(ArvBin *raiz)
 {
-    if(raiz == NULL) // se a raiz estiver nula
+    if(raiz == NULL)
     {
         return 1;
     }
-    if(*raiz == NULL) // se o conteúdo da raiz estiver nulo
+    if(*raiz == NULL)
     {
         return 1;
     }
     return 0;
 }
 
-int altura_arvBin(ArvBin *raiz) // função recursiva
+int altura_arvBin(ArvBin *raiz)
 {
-    // verifica se a arvore tem elementos e foi criada com sucesso
     if(raiz == NULL)
     {
         return 0;
@@ -66,11 +61,9 @@ int altura_arvBin(ArvBin *raiz) // função recursiva
     {
         return 0;
     }
-
-    // vai descendo até os nó-folhas
     int alt_esq = altura_arvBin(&((*raiz)->esq));
     int alt_dir = altura_arvBin(&((*raiz)->dir));
-    if(alt_esq > alt_dir) // verifica qual nó terminal está mais baixo
+    if(alt_esq > alt_dir)
     {
         return(alt_esq + 1);
     }
@@ -90,15 +83,13 @@ int totalNO_arvBin(ArvBin *raiz)
     {
         return 0;
     }
-    int alt_esq = totalNO_arvBin(&((*raiz)->esq)); // passamos os endereços dos nós
+    int alt_esq = totalNO_arvBin(&((*raiz)->esq));
     int alt_dir = totalNO_arvBin(&((*raiz)->dir));
-    // número de nós da esquerda, números de nós da direita mais a raiz
     return(alt_esq + alt_dir + 1);
 }
 
 void preOrdem_arvBin(ArvBin *raiz)
 {
-    // visita a raiz, o filho da esquerda e o filho da direita
     if(raiz == NULL)
     {
         return;
@@ -113,7 +104,6 @@ void preOrdem_arvBin(ArvBin *raiz)
 
 void emOrdem_arvBin(ArvBin *raiz)
 {
-    // visita da filho da esquerda, a raiz e por fim o filho da direita
     if(raiz == NULL)
     {
         return;
@@ -128,7 +118,6 @@ void emOrdem_arvBin(ArvBin *raiz)
 
 void posOrdem_arvBin(ArvBin *raiz)
 {
-    // visita da filho da esquerda, o filho da direita e por fim a raiz
     if(raiz == NULL)
     {
         return;
@@ -143,31 +132,29 @@ void posOrdem_arvBin(ArvBin *raiz)
 
 int insere_arvBin(ArvBin *raiz, int valor)
 {
-    if(raiz == NULL) // verifica se a árvore é válida
+    if(raiz == NULL)
     {
         return 0;
     }
-    struct NO *novo; // alocando um novo nó
+    struct NO *novo;
     novo = (struct NO*) malloc(sizeof(struct NO));
-    if(novo == NULL) // alocação deu errado
+    if(novo == NULL)
     {
         return 0;
     }
 
-    // filhos ficam nulos
     novo->info = valor;
     novo->dir = NULL;
     novo->esq = NULL;
-    if(*raiz == NULL) // se a árvore estiver vazia
+    if(*raiz == NULL)
     {
         *raiz = novo;
     }
-    else // percorre os nós para saber onde ele se encaixa
+    else
     {
-        // auxiliares criados:
         struct NO *atual = *raiz;
         struct NO *ant = NULL;
-        while(atual != NULL) // enquanto não chegar ao fim da árvore
+        while(atual != NULL)
         {
             ant = atual;
             if(valor == atual->info)
@@ -176,16 +163,16 @@ int insere_arvBin(ArvBin *raiz, int valor)
                 return 0;
             }
 
-            if(valor > atual->info) // percorre elementos da direita agora
+            if(valor > atual->info)
             {
                 atual = atual->dir;
             }
-            else // percorre elementos da direita agora
+            else
             {
                 atual = atual->esq;
             }
         }
-        if(valor > ant->info) // se o nó que queremos inserir tiver valor maior que seu pai
+        if(valor > ant->info)
         {
             ant->dir = novo;
         }
@@ -199,25 +186,23 @@ int insere_arvBin(ArvBin *raiz, int valor)
 
 int remove_arvBin(ArvBin *raiz, int valor)
 {
-    if(raiz == NULL) // verifica se a árvore é válida
+    if(raiz == NULL)
     {
         return 0;
     }
-
-    // auxiliares
     struct NO *ant = NULL;
     struct NO *atual = *raiz;
-    while(atual != NULL) // percorre a árvore até o fim
+    while(atual != NULL)
     {
-        if(valor == atual->info) // achou o elemento e faz o tratamento do lado removido
+        if(valor == atual->info)
         {
-            if(atual == *raiz) // verifica estamos na raiz
+            if(atual == *raiz)
             {
                 *raiz = remove_atual(atual);
             }
             else
             {
-                if(ant->dir == atual) // verifica se está na esquerda ou direita
+                if(ant->dir == atual)
                 {
                     ant->dir = remove_atual(atual);
                 }
@@ -229,11 +214,11 @@ int remove_arvBin(ArvBin *raiz, int valor)
             return 1;
         }
         ant = atual;
-        if(valor > atual->info) // procura nos filhos da direita
+        if(valor > atual->info)
         {
             atual = atual->dir;
         }
-        else // procura nos filhos da esquerda
+        else
         {
             atual = atual->esq;
         }
@@ -243,22 +228,21 @@ int remove_arvBin(ArvBin *raiz, int valor)
 struct NO *remove_atual(struct NO *atual)
 {
     struct NO *no1, *no2;
-    if(atual->esq == NULL) // nó com 1 filho ou sem filhos
+    if(atual->esq == NULL)
     {
-        no2 = atual->dir; // aponta para o dilho da direita
+        no2 = atual->dir;
         free(atual);
         return no2;
     }
     no1 = atual;
     no2 = atual->esq;
-    while(no2->dir != NULL) // procura o filho mais a esquerda da arvore
+    while(no2->dir != NULL)
     {
         no1 = no2;
         no2 = no2->dir;
     }
     if(no1 != atual)
     {
-        // copia o filho mais a direita na árvore para o lugar que foi removido
         no1->dir = no2->esq;
         no2->esq = atual->esq;
     }
@@ -269,22 +253,22 @@ struct NO *remove_atual(struct NO *atual)
 
 int consulta_arvBin(ArvBin *raiz, int valor)
 {
-    if(raiz == NULL) // verifica se a árvore é valida
+    if(raiz == NULL)
     {
         return 0;
     }
     struct NO *atual = *raiz;
-    while(atual != NULL) // procura na árvore até chegar no fim
+    while(atual != NULL)
     {
-        if(valor == atual->info) // achou o nó
+        if(valor == atual->info)
         {
             return 1;
         }
-        if(valor >atual->info) // procura no lado direito
+        if(valor >atual->info)
         {
             atual = atual->dir;
         }
-        else // procura no lado esquerdo
+        else
         {
             atual = atual->esq;
         }

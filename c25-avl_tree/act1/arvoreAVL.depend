@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1717158132 source:c:\users\aluno\documents\edaii\c25-avl_tree\act1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreAVL.h"
+
+1717546794 c:\users\aluno\documents\edaii\c25-avl_tree\act1\arvoreavl.h
+
+1718588804 source:c:\users\gabri\onedrive\Área de trabalho\www\ifsp-estrutura-dados\c25-avl_tree\act1\arvoreavl.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreAVL.h"
+
+1718587967 c:\users\gabri\onedrive\Área de trabalho\www\ifsp-estrutura-dados\c25-avl_tree\act1\arvoreavl.h
+
+1718588124 source:c:\users\gabri\onedrive\Área de trabalho\www\ifsp-estrutura-dados\c25-avl_tree\act1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreAVL.h"
+
